@@ -1,0 +1,616 @@
+{
+    "pkg":  "pkg-08e82c8d",
+    "total":  100,
+    "by_path":  {
+                    "seed":  95,
+                    "reject":  5
+                },
+    "needs_review":  [
+
+                     ],
+    "llm_available":  false,
+    "fofa_available":  false,
+    "note":  "PowerShell seed runner (no Python). Prefer python src/pipeline.py when available.",
+    "items":  [
+                  {
+                      "id":  "M001-S009",
+                      "path":  "seed",
+                      "query":  "ip=\"20.247.40.92\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M002-S004",
+                      "path":  "seed",
+                      "query":  "ip=\"124.255.254.0/24\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M003-S002",
+                      "path":  "seed",
+                      "query":  "domain=\"zendesk.com\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M004-S003",
+                      "path":  "seed",
+                      "query":  "host=\"www.amazon.com\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M005-S004",
+                      "path":  "seed",
+                      "query":  "host*=\"vpn\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M006-S002",
+                      "path":  "seed",
+                      "query":  "country=\"GB\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M007-S007",
+                      "path":  "seed",
+                      "query":  "country=\"KR\" \u0026\u0026 region=\"Gangwon-do\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M008-S009",
+                      "path":  "seed",
+                      "query":  "country=\"DE\" \u0026\u0026 region=\"Bayern\" \u0026\u0026 city=\"München\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M009-S008",
+                      "path":  "seed",
+                      "query":  "asn=\"4134\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M010-S009",
+                      "path":  "seed",
+                      "query":  "country=\"NL\" \u0026\u0026 cloud_name=\"AWS\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M011-S005",
+                      "path":  "seed",
+                      "query":  "region=\"Hebei\" \u0026\u0026 cloud_name=\"Huawei Cloud\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M012-S009",
+                      "path":  "seed",
+                      "query":  "port=\"3000\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M013-S003",
+                      "path":  "seed",
+                      "query":  "(title=\"Jenkins\" || body=\"jenkins\") \u0026\u0026 country!=\"CN\" \u0026\u0026 after=\"2026-08-01\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M014-S002",
+                      "path":  "seed",
+                      "query":  "country=\"CN\" \u0026\u0026 protocol=\"dns\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M015-S001",
+                      "path":  "seed",
+                      "query":  "protocol=\"socks5\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M016-S006",
+                      "path":  "seed",
+                      "query":  "protocol=\"ssh\" \u0026\u0026 port=\"22022\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M017-S001",
+                      "path":  "seed",
+                      "query":  "base_protocol=\"tcp\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M018-S006",
+                      "path":  "seed",
+                      "query":  "protocol=\"snmp\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M019-S010",
+                      "path":  "seed",
+                      "query":  "protocol=\"memcached\" \u0026\u0026 country=\"US\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M020-S005",
+                      "path":  "seed",
+                      "query":  "protocol=\"ftp\" \u0026\u0026 base_protocol=\"tcp\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M021-S010",
+                      "path":  "seed",
+                      "query":  "protocol=\"ssh\" \u0026\u0026 banner=\"OpenSSH_10.4\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M022-S007",
+                      "path":  "seed",
+                      "query":  "country=\"JP\" \u0026\u0026 app=\"Hikvision-摄像头\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M023-S002",
+                      "path":  "seed",
+                      "query":  "host==\"?.?.163.com\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M024-S005",
+                      "path":  "seed",
+                      "query":  "product.version=\"10.0.0\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M025-S010",
+                      "path":  "seed",
+                      "query":  "product_category=\"中间件\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M026-S002",
+                      "path":  "seed",
+                      "query":  "body=\"NoSuchUpload\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M027-S008",
+                      "path":  "seed",
+                      "query":  "header=\"Content-Security-Policy-Report-Only\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M028-S011",
+                      "path":  "seed",
+                      "query":  "status_code=\"308\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M029-S010",
+                      "path":  "seed",
+                      "query":  "banner=\"SSH-2.0-OpenSSH_6.1\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M030-S003",
+                      "path":  "seed",
+                      "query":  "header=\"Set-Cookie:PHPSESSID\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M031-S009",
+                      "path":  "seed",
+                      "query":  "body=\"jquery.min.js\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M032-S010",
+                      "path":  "seed",
+                      "query":  "country=\"NL\" \u0026\u0026 city=\"Amsterdam\" \u0026\u0026 port=\"554\" \u0026\u0026 banner=\"200 OK\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M033-S003",
+                      "path":  "seed",
+                      "query":  "cert.issuer.org=\"GlobalSign\" \u0026\u0026 cert.is_valid=true",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M034-S007",
+                      "path":  "seed",
+                      "query":  "cert.subject=\"apple.com\" \u0026\u0026 domain!=\"apple.com\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M035-S010",
+                      "path":  "seed",
+                      "query":  "cert=\"TrustAsia\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M036-S007",
+                      "path":  "seed",
+                      "query":  "cert.subject.org=\"Alibaba\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M037-S008",
+                      "path":  "seed",
+                      "query":  "domain=\"sohu.com\" \u0026\u0026 banner!=\"\" \u0026\u0026 banner!=\"apache\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M038-S009",
+                      "path":  "seed",
+                      "query":  "cert.domain=\"adobe.com\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M039-S001",
+                      "path":  "seed",
+                      "query":  "cert.subject.cn=\"qq.com\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M040-S011",
+                      "path":  "seed",
+                      "query":  "cert=\"godaddy\" \u0026\u0026 domain!=\"godaddy.com\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M041-S001",
+                      "path":  "seed",
+                      "query":  "cert=\"google.com\" \u0026\u0026 is_honeypot=false \u0026\u0026 is_fraud=false",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M042-S003",
+                      "path":  "seed",
+                      "query":  "cert.subject*=\"example.com\" || cert*=\"example.com\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M043-S004",
+                      "path":  "seed",
+                      "query":  "tls.version=\"TLS 1.0\" \u0026\u0026 cert.is_valid=true",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M044-S007",
+                      "path":  "seed",
+                      "query":  "jarm=\"21d21d00021d21d00021d21d21d21dce319294781f0e12867fd06896a000ea\" \u0026\u0026 status_code=\"307\" \u0026\u0026 header=\"Content-Length: 0\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M045-S001",
+                      "path":  "seed",
+                      "query":  "os=\"linux\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M046-S013",
+                      "path":  "seed",
+                      "query":  "country=\"CN\" \u0026\u0026 region!=\"HK\" \u0026\u0026 region!=\"MO\" \u0026\u0026 region!=\"TW\" \u0026\u0026 is_domain=false",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M047-S011",
+                      "path":  "seed",
+                      "query":  "cert.is_equal=false",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M048-S001",
+                      "path":  "seed",
+                      "query":  "country=\"CA\" \u0026\u0026 cert.is_match=false",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M049-S010",
+                      "path":  "seed",
+                      "query":  "country=\"TR\" \u0026\u0026 tls.ja3s=\"f4febc55ea12b31ae17cfb7e614afda8\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M050-S004",
+                      "path":  "seed",
+                      "query":  "org=\"Inc\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M051-S001",
+                      "path":  "seed",
+                      "query":  "country=\"US\" \u0026\u0026 org=\"OVH SAS\" \u0026\u0026 port=\"2087\" \u0026\u0026 title=\"WHM 登录\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M052-S002",
+                      "path":  "seed",
+                      "query":  "host*=\".io\" \u0026\u0026 app=\"WordPress\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M053-S009",
+                      "path":  "seed",
+                      "query":  "city=\"Xiamen\" \u0026\u0026 port=\"80\" \u0026\u0026 status_code=\"200\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M054-S009",
+                      "path":  "seed",
+                      "query":  "country=\"GB\" \u0026\u0026 cloud_name=\"DigitalOcean\" \u0026\u0026 body=\"/api/show\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M055-S003",
+                      "path":  "seed",
+                      "query":  "country=\"CN\" \u0026\u0026 region!=\"HK\" \u0026\u0026 region!=\"MO\" \u0026\u0026 region!=\"TW\" \u0026\u0026 header=\"Set-Cookie\" \u0026\u0026 body=\"/admin\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M056-S008",
+                      "path":  "seed",
+                      "query":  "domain=\"baidu.com\" \u0026\u0026 (body=\"Login\" || body=\"admin\" || body=\"Dashboard\" || body=\"管理\" || header=\"Set-Cookie\")",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M057-S012",
+                      "path":  "seed",
+                      "query":  "ip=\"13.0.0.0/8\" \u0026\u0026 status_code=\"200\" \u0026\u0026 (body=\"Welcome\" || body=\"Sign in\" || body=\"Dashboard\")",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M058-S012",
+                      "path":  "seed",
+                      "query":  "country=\"DE\" \u0026\u0026 (host=\"amazonaws.com\" || domain=\"amazonaws.com\" || cname_domain=\"amazonaws.com\" || cert=\"amazonaws.com\" || cert.domain=\"amazonaws.com\")",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M059-S006",
+                      "path":  "seed",
+                      "query":  "port=\"143\" \u0026\u0026 cert.sn=\"1\" \u0026\u0026 (cert=\"TAK\" || cert=\"ATAK\" || cert=\"WinTAK\" || cert=\"Squad\" || cert=\"CoT\")",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M060-S010",
+                      "path":  "seed",
+                      "query":  "ip=\"113.247.228.0/24\" \u0026\u0026 (port=\"80\" || port=\"443\" || port=\"8080\" || port=\"8443\")",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M061-S005",
+                      "path":  "seed",
+                      "query":  "(title=\"Sign in\" || title=\"Login\") \u0026\u0026 port=\"80\" \u0026\u0026 is_ipv6=false",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M062-S010",
+                      "path":  "seed",
+                      "query":  "country=\"NZ\" \u0026\u0026 (port=\"80\" || port=\"443\") \u0026\u0026 is_cloud=true",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M063-S001",
+                      "path":  "seed",
+                      "query":  "(banner=\"IIS\" \u0026\u0026 banner=\"1.\") || header=\"IIS\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M064-S004",
+                      "path":  "seed",
+                      "query":  "country=\"JP\" \u0026\u0026 is_domain=true \u0026\u0026 port=\"443\" \u0026\u0026 status_code=\"200\" \u0026\u0026 cert.is_valid=true \u0026\u0026 (title=\"大学\" || title=\"学部\" || title=\"研究\" || body=\"入学案内\" || body=\"学生\")",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M065-S004",
+                      "path":  "seed",
+                      "query":  "domain=\"baidu.com\" \u0026\u0026 (title=\"系统\" || title=\"平台\" || title=\"登录\" || title=\"管理\" || title=\"API\" || host*=\"api\" || host*=\"admin\" || host*=\"dev\" || host*=\"test\" || host*=\"uat\" || host*=\"pre\")",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M066-S006",
+                      "path":  "seed",
+                      "query":  "product_category=\"邮件系统\" \u0026\u0026 title=\"Mail\" \u0026\u0026 country!=\"US\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M067-S008",
+                      "path":  "seed",
+                      "query":  "country=\"CN\" \u0026\u0026 region!=\"HK\" \u0026\u0026 region!=\"MO\" \u0026\u0026 region!=\"TW\" \u0026\u0026 port=\"8888\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M068-S005",
+                      "path":  "seed",
+                      "query":  "body=\"Jenkins\" \u0026\u0026 title!=\"Jenkins\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M069-S001",
+                      "path":  "seed",
+                      "query":  "region=\"TW\" \u0026\u0026 asn=\"20940\" \u0026\u0026 port=\"443\" \u0026\u0026 tls.version=\"TLS 1.3\" \u0026\u0026 cert.issuer.org!=\"Let\u0027s Encrypt\" \u0026\u0026 cert.issuer.org!=\"ZeroSSL\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M070-S003",
+                      "path":  "seed",
+                      "query":  "country!=\"JP\" \u0026\u0026 app=\"HFS\" \u0026\u0026 status_code=\"200\" \u0026\u0026 title=\"HFS /\" \u0026\u0026 cloud_name!=\"AWS\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M071-S006",
+                      "path":  "seed",
+                      "query":  "country=\"CN\" \u0026\u0026 region!=\"HK\" \u0026\u0026 region!=\"MO\" \u0026\u0026 region!=\"TW\" \u0026\u0026 app=\"Grafana\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M072-S008",
+                      "path":  "seed",
+                      "query":  "host*=\".edu.ar\" \u0026\u0026 (port=\"80\" || port=\"443\") \u0026\u0026 server!=\"Nginx\" \u0026\u0026 app!=\"WAF\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M073-S003",
+                      "path":  "seed",
+                      "query":  "ip=\"1.1.1.1\" \u0026\u0026 is_domain=true",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M074-S008",
+                      "path":  "seed",
+                      "query":  "cert.domain=\"aliyun.com\" \u0026\u0026 cert.is_valid=true \u0026\u0026 is_domain=false",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M075-S006",
+                      "path":  "seed",
+                      "query":  "country=\"CN\" \u0026\u0026 is_domain=true \u0026\u0026 header=\"x-qiniu-zone\" \u0026\u0026 domain!=\"qiniudn.com\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M076-S004",
+                      "path":  "seed",
+                      "query":  "title=\"\" \u0026\u0026 status_code=\"200\" \u0026\u0026 fid!=\"\" \u0026\u0026 icon_hash!=\"\" \u0026\u0026 host*=\"admin\" \u0026\u0026 (host*=\".cn\" || host==\"????.com\")",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M077-S009",
+                      "path":  "seed",
+                      "query":  "body=\"class=\\\"container\\\"\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M078-S009",
+                      "path":  "seed",
+                      "query":  "body=\"\\\"exception\\\": \\\"Symfony\\\\Component\\\\ErrorHandler\\\\Error\\\\FatalError\\\"\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M079-S006",
+                      "path":  "seed",
+                      "query":  "ip=\"40.88.0.0/16\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M080-S006",
+                      "path":  "seed",
+                      "query":  "(ip=\"47.96.0.1\" || ip=\"47.96.0.2\" || ip=\"47.96.0.3\" || ip=\"47.96.0.4\" || ip=\"47.96.0.5\") \u0026\u0026 (port=\"80\" || port=\"443\")",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M081-S011",
+                      "path":  "seed",
+                      "query":  "app=\"Grafana\" \u0026\u0026 ((header_hash!=\"\" \u0026\u0026 body_hash!=\"\") || (header_hash!=\"\" \u0026\u0026 icon_hash!=\"\") || (header_hash!=\"\" \u0026\u0026 fid!=\"\") || (body_hash!=\"\" \u0026\u0026 icon_hash!=\"\") || (body_hash!=\"\" \u0026\u0026 fid!=\"\") || (icon_hash!=\"\" \u0026\u0026 fid!=\"\"))",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M082-S001",
+                      "path":  "seed",
+                      "query":  "(domain=\"kuaihuoyun.com\" || domain=\"wlhyos.cn\" || domain=\"wlhyos.com\" || domain=\"56ctms.com\" || domain=\"xiaokuaikeji.com\" || domain=\"zhihuiwuliu.org.cn\" || cert.domain=\"kuaihuoyun.com\" || cert.domain=\"wlhyos.cn\" || cert.domain=\"wlhyos.com\" || cert.domain=\"56ctms.com\" || cert.domain=\"xiaokuaikeji.com\" || cert.domain=\"zhihuiwuliu.org.cn\") \u0026\u0026 cert.is_match=true \u0026\u0026 cert.is_valid=true \u0026\u0026 cert.after=\"2024-01-01 00:00:00\" \u0026\u0026 cert.before=\"2026-08-30 18:17:49\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M083-S008",
+                      "path":  "seed",
+                      "query":  "header=\"Server: nginx\" \u0026\u0026 title=\"Welcome\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M084-S004",
+                      "path":  "seed",
+                      "query":  "title=\"Grafana\" \u0026\u0026 body=\"JavaScript\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M085-S001",
+                      "path":  "seed",
+                      "query":  "body=\"login\" \u0026\u0026 (host*=\"bet\" || host*=\"casino\" || host*=\"kasino\")",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M086-S006",
+                      "path":  "seed",
+                      "query":  "domain=\"google\" \u0026\u0026 domain!=\"google.com\" \u0026\u0026 title=\"\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M087-S009",
+                      "path":  "seed",
+                      "query":  "header=\"Server: Tengine\" || header=\"x-cache: MISS\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M088-S004",
+                      "path":  "seed",
+                      "query":  "asn!=\"4134\" \u0026\u0026 region=\"HK\" \u0026\u0026 server==\"Apache\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M089-S010",
+                      "path":  "seed",
+                      "query":  "(app=\"HFS\" \u0026\u0026 port=\"80\") || (app=\"HFS\" \u0026\u0026 port=\"8080\" \u0026\u0026 status_code=\"200\")",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M090-S008",
+                      "path":  "seed",
+                      "query":  "header=\"Content-Length: 1171\" \u0026\u0026 header=\"Accept-Ranges\" \u0026\u0026 header=\"Cache-Control\" \u0026\u0026 header=\"Content-Type\" \u0026\u0026 header=\"Date\" \u0026\u0026 header=\"Etag: \\\"6aa522a3-493\\\"\" \u0026\u0026 header=\"Last-Modified\" \u0026\u0026 header=\"Server\" \u0026\u0026 header=\"Vary\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M091-S009",
+                      "path":  "reject",
+                      "query":  "该需求不能直接转换为FOFA搜索语句",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M092-S007",
+                      "path":  "reject",
+                      "query":  "该需求不能直接转换为FOFA搜索语句",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M093-S004",
+                      "path":  "reject",
+                      "query":  "该需求不能直接转换为FOFA搜索语句",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M094-S004",
+                      "path":  "reject",
+                      "query":  "该需求不能直接转换为FOFA搜索语句",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M095-S010",
+                      "path":  "reject",
+                      "query":  "该需求不能直接转换为FOFA搜索语句",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M096-S001",
+                      "path":  "seed",
+                      "query":  "body=\"X-Remoting-Capability\" || body=\"Remoting-Capability\" || banner=\"X-Remoting-Capability\" || banner=\"Remoting-Capability\" || body=\"Jenkins-Agent-Protocols\" || banner=\"Jenkins-Agent-Protocols\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M097-S001",
+                      "path":  "seed",
+                      "query":  "icon_hash=\"-235516182\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M098-S001",
+                      "path":  "seed",
+                      "query":  "host*=\"msp.gov.cn\" \u0026\u0026 domain!=\"msp.gov.cn\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M099-S001",
+                      "path":  "seed",
+                      "query":  "app=\"Apache HTTP Server\" \u0026\u0026 product.version=\"2.4.49\"",
+                      "needs_review":  false
+                  },
+                  {
+                      "id":  "M100-S001",
+                      "path":  "seed",
+                      "query":  "cert.issuer.cn=\"ZeroSSL ECC DV SSL CA 2\" \u0026\u0026 cert.sn=\"63BD83716214836EF80075356161EB06\"",
+                      "needs_review":  false
+                  }
+              ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "nl": "请查询 IP 地址为 20.247.40.92 的资产。",
+    "out": { "query": "ip=\"20.247.40.92\"" }
+  },
+  {
+    "nl": "请查询 124.255.254.0/24 网段内的全部资产。",
+    "out": { "query": "ip=\"124.255.254.0/24\"" }
+  },
+  {
+    "nl": "请查询主域是 zendesk.com 的全部资产。",
+    "out": { "query": "domain=\"zendesk.com\"" }
+  },
+  {
+    "nl": "搜索开放 1000000 端口的资产。",
+    "out": { "reject": true }
+  },
+  {
+    "nl": "请把下面的 Shodan 查询转换成 FOFA：\"Server: nginx\" http.title:\"Welcome\"",
+    "out": { "query": "header=\"Server: nginx\" && title=\"Welcome\"" }
+  },
+  {
+    "nl": "我想要搜索这个 IP 的整个 B 段：40.88.14.254。",
+    "out": { "query": "ip=\"40.88.0.0/16\"" }
+  },
+  {
+    "nl": "找中国大陆开放 8888 端口的资产，香港、澳门、台湾都排除。",
+    "out": {
+      "query": "country=\"CN\" && region!=\"HK\" && region!=\"MO\" && region!=\"TW\" && port=\"8888\""
+    }
+  },
+  {
+    "nl": "修正这条 FOFA 查询。意图：HFS 的 80 端口都要；8080 端口仅状态码为 200 时要。",
+    "out": {
+      "query": "(app=\"HFS\" && port=\"80\") || (app=\"HFS\" && port=\"8080\" && status_code=\"200\")"
+    }
+  }
+]

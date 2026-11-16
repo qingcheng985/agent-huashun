@@ -1,0 +1,75 @@
+# 高置信单字段 / 简单组合模板（按顺序匹配，首个命中即返回）
+# capture 组写入 query 模板的 {1}{2}...
+
+templates:
+  - id: ip_exact
+    pattern: 'IP\\s*地址为\\s*([0-9.]+)'
+    query: 'ip="{1}"'
+    confidence: 0.95
+
+  - id: ip_cidr
+    pattern: '([0-9.]+/[0-9]{1,2})\\s*网段'
+    query: 'ip="{1}"'
+    confidence: 0.95
+
+  - id: domain_exact
+    pattern: '主域是\\s*([a-zA-Z0-9.-]+)'
+    query: 'domain="{1}"'
+    confidence: 0.95
+
+  - id: host_exact
+    pattern: '网站名为\\s*([a-zA-Z0-9.-]+)'
+    query: 'host="{1}"'
+    confidence: 0.9
+
+  - id: host_contains
+    pattern: '域名里带有\\s*([a-zA-Z0-9_-]+)'
+    query: 'host*="{1}"'
+    confidence: 0.9
+
+  - id: asn
+    pattern: '自治系统号为\\s*([0-9]+)'
+    query: 'asn="{1}"'
+    confidence: 0.95
+
+  - id: port_open
+    pattern: '开放\\s*([0-9]+)\\s*端口'
+    query: 'port="{1}"'
+    confidence: 0.9
+
+  - id: status_code
+    pattern: '状态码为\\s*([0-9]{3})'
+    query: 'status_code="{1}"'
+    confidence: 0.85
+
+  - id: os_linux
+    pattern: '操作系统被识别为\\s*linux'
+    query: 'os="linux"'
+    confidence: 0.95
+
+  - id: body_literal
+    pattern: '网页正文中出现\\s+(\\S+)\\s+错误标记'
+    query: 'body="{1}"'
+    confidence: 0.9
+
+  - id: body_class
+    pattern: '原样文本的资产：(.+)$'
+    query: 'body="{1}"'
+    confidence: 0.85
+
+country_aliases:
+  大不列颠及北爱尔兰联合王国: GB
+  英国: GB
+  美国: US
+  中国: CN
+  中国大陆: CN
+  日本: JP
+  韩国: KR
+  德国: DE
+  荷兰: NL
+  加拿大: CA
+  土耳其: TR
+  新西兰: NZ
+  台湾: TW
+  香港: HK
+  澳门: MO

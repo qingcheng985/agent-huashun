@@ -1,0 +1,30 @@
+reject_text: 该需求不能直接转换为FOFA搜索语句
+
+# 命中任一条则整题拒绝（不调规则/LLM）
+rules:
+  - id: invalid_port
+    desc: 端口不在 0–65535
+    # 由 classify.py 用数值解析实现
+
+  - id: invalid_ip
+    desc: IP/网段字面量非法（段数或取值）
+    # 由 classify.py 实现
+
+  - id: contradictory_country
+    desc: 同题要求国家既等于又不等于同一值
+    patterns:
+      - 国家代码必须等于\\s*([A-Z]{2}).*不等于\\s*\\1
+      - 国家代码必须等于\\s*([A-Z]{2}).*国家代码又必须不等于\\s*\\1
+
+  - id: subjective_security
+    desc: 无 FOFA 可检索特征的主观安全评价
+    patterns:
+      - 最安全的网站
+      - 最安全
+
+  - id: runtime_monitor
+    desc: 需要运行时监控/容器指标，FOFA 无此观测面
+    patterns:
+      - 容器内存使用率
+      - 没有容器监控数据
+      - 运行时访问权限
